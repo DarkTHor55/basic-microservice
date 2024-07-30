@@ -37,3 +37,15 @@ z
 Jorder-service/src/main/java/com/darkthor/Request/OrderLineItemRequest.java,2/a/2ab36c1e5cd4d381aaf84ac74ebfae6842e854cc
 l
 <order-service/src/main/java/com/darkthor/Service/Mapper.java,4/3/43a2f7fd25bb0d0838d0f066e295de994f3bb1be
+q
+Ainventory-service/src/main/java/com/darkthor/Model/Inventory.java,1/a/1a7eb1f763ca1531a5654adac4e9c86443faf009
+€
+Pinventory-service/src/main/java/com/darkthor/Repository/InventoryRepository.java,c/8/c8acefd79e96fe938aca8a54a2165e8e2af47a55
+€
+Pinventory-service/src/main/java/com/darkthor/Controller/InventoryController.java,5/0/50c2b09c3064e8d4af92a3ec619e249a03a48f22
+z
+Jinventory-service/src/main/java/com/darkthor/Service/InventoryService.java,9/4/94dbf4be84c07a9b90a34fb27473326c02940051
+}
+Minventory-service/src/main/java/com/darkthor/InventoryServiceApplication.java,6/3/63c8a777502b1d099ecd11708990ae10156a204e
+I
+inventory-service/pom.xml,e/3/e347da292c40d252c508703eddff460d1f378f1c
