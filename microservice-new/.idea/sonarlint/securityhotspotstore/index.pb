@@ -25,3 +25,17 @@ JInventory-service/src/main/java/com/darkthor/Service/InventoryService.java,7/a
 PInventory-service/src/main/java/com/darkthor/Repository/InventoryRepository.java,c/2/c294d2042336b28e6a4d7588cf4a928cb2330e3c
 |
 LInventory-service/src/main/java/com/darkthor/Response/InventoryResponse.java,c/6/c68647b7a651e634520722e2ca10a8d0bf10facf
+p
+@Order-service/src/main/java/com/darkthor/Response/Inventory.java,4/e/4e934517642dfcadb7af462b14b90970662732eb
+x
+HOrder-service/src/main/java/com/darkthor/Response/InventoryResponse.java,b/2/b21e9676dda97488c578d6edd6993e9e40dbfe2e
+x
+HOrder-service/src/main/java/com/darkthor/Controller/OrderController.java,8/d/8d5c034830889e7baf248b141279dc7125cab342
+‚
+RInventory-service/src/test/java/com/darkthor/InventoryServiceApplicationTests.java,d/e/deb9ca478e7661145654a7e64b1933bd6faf8215
+l
+<Order-service/src/main/java/com/darkthor/Service/Mapper.java,5/d/5dd9508e78e19ab7bed938c20b02b3136cebdc56
+z
+JOrder-service/src/main/java/com/darkthor/Request/OrderLineItemRequest.java,2/d/2db9f9e00265243b702e9aa1fc2f123ed3ce46dc
+x
+HOrder-service/src/main/java/com/darkthor/Repository/OrderRepository.java,6/e/6ee0725dc45d16c1c90af6266848ed4f9a1e17dd
