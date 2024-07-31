@@ -10,6 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
+//@EnableEurekaClient
 public class InventoryServiceApplication {
 	private static final Logger logger = LoggerFactory.getLogger(InventoryServiceApplication.class);
 

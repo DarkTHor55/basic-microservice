@@ -25,8 +25,6 @@ JInventory-service/src/main/java/com/darkthor/Service/InventoryService.java,7/a
 PInventory-service/src/main/java/com/darkthor/Repository/InventoryRepository.java,c/2/c294d2042336b28e6a4d7588cf4a928cb2330e3c
 |
 LInventory-service/src/main/java/com/darkthor/Response/InventoryResponse.java,c/6/c68647b7a651e634520722e2ca10a8d0bf10facf
-p
-@Order-service/src/main/java/com/darkthor/Response/Inventory.java,4/e/4e934517642dfcadb7af462b14b90970662732eb
 x
 HOrder-service/src/main/java/com/darkthor/Response/InventoryResponse.java,b/2/b21e9676dda97488c578d6edd6993e9e40dbfe2e
 x
@@ -39,3 +37,7 @@ z
 JOrder-service/src/main/java/com/darkthor/Request/OrderLineItemRequest.java,2/d/2db9f9e00265243b702e9aa1fc2f123ed3ce46dc
 x
 HOrder-service/src/main/java/com/darkthor/Repository/OrderRepository.java,6/e/6ee0725dc45d16c1c90af6266848ed4f9a1e17dd
+H
+Discovery-Server/pom.xml,6/8/684251f3b856c88a254890e0b7d8e22896cf8c6f
+{
+KDiscovery-Server/src/main/java/com/darkthor/DiscoveryServerApplication.java,2/2/2287ebf6888c656d7f3104044722aea1027868a1
