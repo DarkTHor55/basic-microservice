@@ -23,7 +23,7 @@ import java.util.UUID;
 public class OrderService {
     private final OrderRepository orderRepository;
     private final Mapper mapper;
-    private final WebClient webClient;
+    private final WebClient.Builder webClientBuilder;
     private final Logger logger= LoggerFactory.getLogger(OrderService.class);
 
     public void placeOrder(OrderRequest orderRequest) {
@@ -43,15 +43,15 @@ public class OrderService {
 
         // Call inventory service to check stock
         try {
+            WebClient webClient = webClientBuilder.baseUrl("http://inventory-service").build();
             InventoryResponse[] inventoryResponsesArray = webClient.get()
                     .uri(uriBuilder -> uriBuilder.path("/api/v1/inventory")
                             .queryParam("skuCode", String.join(",", skuCodes))
                             .build())
                     .retrieve()
                     .bodyToMono(InventoryResponse[].class)
-                    .doOnNext(responses -> System.out.println("Inventory Responses: " + Arrays.toString(responses)))
+                    .doOnNext(responses -> System.out.println("Inventory Responses: " + Arrays.toString(responses))) // Log responses
                     .block();
-
             // Check for null response
             if (inventoryResponsesArray == null) {
                 throw new RuntimeException("Failed to fetch inventory information");
