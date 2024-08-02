@@ -1,6 +1,6 @@
 package com.darkthor.Controller;
 
-import com.darkthor.Controller.Response.ProductResponse;
+import com.darkthor.Response.ProductResponse;
 import com.darkthor.Model.Product;
 import com.darkthor.Request.ProductRequest;
 import com.darkthor.Serivce.ProductService;

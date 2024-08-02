@@ -1,4 +1,4 @@
-package com.darkthor.Controller.Response;
+package com.darkthor.Response;
 
 import com.darkthor.Model.Product;
 import lombok.*;

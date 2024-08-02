@@ -12,7 +12,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProductService {
     private final ProductRepository productRepository;
-    private final Mapper mapper;;
+    private final Mapper mapper;
 
     public Product saveProduct(ProductRequest productRequest) {
         Product product=mapper.toProduct(productRequest);

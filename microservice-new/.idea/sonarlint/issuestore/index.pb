@@ -41,3 +41,17 @@ H
 Discovery-Server/pom.xml,6/8/684251f3b856c88a254890e0b7d8e22896cf8c6f
 {
 KDiscovery-Server/src/main/java/com/darkthor/DiscoveryServerApplication.java,2/2/2287ebf6888c656d7f3104044722aea1027868a1
+B
+ApiGateway/pom.xml,b/3/b34264349f0c5456ea28df0c6a7fc2c4055c3c35
+p
+@ApiGateway/src/main/java/com/darkthor/ApiGatewayApplication.java,5/9/59e386ef7c1c95149f0a1175d57edbdfb7766c3e
+|
+LProduct-service/src/main/java/com/darkthor/Controller/ProductController.java,8/1/81fb126e04c73a102c601a9d2ffacb9d5b5597ca
+n
+>Product-service/src/main/java/com/darkthor/Serivce/Mapper.java,5/6/56ee29308496483c6be88fbbd195ad114b10d016
+v
+FProduct-service/src/main/java/com/darkthor/Serivce/ProductService.java,b/5/b570f7679b1e680d7d1132e53862832c7f4a2d51
+}
+MApiGateway/src/main/java/com/darkthor/Configruation/GateWayConfiguration.java,7/f/7f5057ca4663548f51fd44c02d7f4d382aa86306
+}
+MApiGateway/src/main/java/com/darkthor/Configruation/GatewayConfiguration.java,b/4/b458874c40e20735da4db0a9e95be3124d407197
