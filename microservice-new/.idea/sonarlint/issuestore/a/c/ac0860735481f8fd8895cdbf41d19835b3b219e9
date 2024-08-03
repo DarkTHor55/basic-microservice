@@ -1,0 +1,8 @@
+
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(»æ¸«8’∞†¥ë2
+ë
+java:S1128"oRemove this unused import 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity'.(ü‹—ç˝ˇˇˇˇ8‹∞†¥ë2
+è
+java:S1128"rRemove this unused import 'org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer'.(«ºêŒ8›∞†¥ë2
+Ü
+java:S1128"iRemove this unused import 'org.springframework.security.web.server.csrf.CookieServerCsrfTokenRepository'.(Ñ∫Ù∂8›∞†¥ë2

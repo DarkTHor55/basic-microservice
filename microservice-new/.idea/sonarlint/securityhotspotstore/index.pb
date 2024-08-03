@@ -55,3 +55,7 @@ FProduct-service/src/main/java/com/darkthor/Serivce/ProductService.java,b/5/b57
 MApiGateway/src/main/java/com/darkthor/Configruation/GateWayConfiguration.java,7/f/7f5057ca4663548f51fd44c02d7f4d382aa86306
 }
 MApiGateway/src/main/java/com/darkthor/Configruation/GatewayConfiguration.java,b/4/b458874c40e20735da4db0a9e95be3124d407197
+~
+NApiGateway/src/main/java/com/darkthor/Configruation/SecurityConfiguration.java,a/c/ac0860735481f8fd8895cdbf41d19835b3b219e9
+}
+MDiscovery-Server/src/main/java/com/darkthor/Configuration/SecurityConfig.java,5/2/525006cf81f02d06ee90bd120c65fe8f53ed7bbe
