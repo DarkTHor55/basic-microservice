@@ -3,6 +3,9 @@ package com.darkthor.Controller;
 import com.darkthor.Model.Order;
 import com.darkthor.Request.OrderRequest;
 import com.darkthor.Service.OrderService;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
+import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
@@ -10,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 
 @RestController
 @RequestMapping("/api/v1/order")
@@ -17,9 +21,16 @@ import java.util.List;
 public class OrderController {
     private final OrderService orderService;
     @PostMapping
-    public ResponseEntity<String> placeOrder(@RequestBody OrderRequest orderRequest) {
+    @CircuitBreaker(name = "inventory", fallbackMethod = "fallbackMethod")
+    @TimeLimiter(name = "inventory")
+    @Retry(name = "inventory")
+    public CompletableFuture<ResponseEntity<String>> placeOrder(@RequestBody OrderRequest orderRequest) {
         orderService.placeOrder(orderRequest);
-        return new ResponseEntity<>("Order placed successfully", HttpStatus.OK);
+        return CompletableFuture.supplyAsync(()-> new ResponseEntity<>("Order placed successfully", HttpStatus.OK));
+    }
+
+    public CompletableFuture<String> fallbackMethod(OrderRequest orderRequest, RuntimeException exception) {
+        return CompletableFuture.supplyAsync(()-> "Oops! Something went wrong. Please try again later.");
     }
 
     @GetMapping

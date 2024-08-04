@@ -59,3 +59,5 @@ MApiGateway/src/main/java/com/darkthor/Configruation/GatewayConfiguration.java,
 NApiGateway/src/main/java/com/darkthor/Configruation/SecurityConfiguration.java,a/c/ac0860735481f8fd8895cdbf41d19835b3b219e9
 }
 MDiscovery-Server/src/main/java/com/darkthor/Configuration/SecurityConfig.java,5/2/525006cf81f02d06ee90bd120c65fe8f53ed7bbe
+è
+_Order-service/src/main/java/com/darkthor/Configuration/CustomCircuitBreakerHealthIndicator.java,2/2/2241147f50bf46eff3fec06ddc23d13a12ffa3b0

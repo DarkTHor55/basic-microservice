@@ -1,4 +1,6 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ª÷âÁûÿÿÿÿ8˜âêÚ‘2
+_
+java:S1172 "BRemove these unused method parameters "orderRequest", "exception".(¬Ë•ë8¹âêÚ‘2
 a
-java:S1128"DRemove this unused import 'org.springframework.http.HttpStatusCode'.(®å™Õ8õ·¨·2
+java:S1128"DRemove this unused import 'org.springframework.http.HttpStatusCode'.(®å™Õ8¿âêÚ‘2
