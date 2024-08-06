@@ -20,6 +20,7 @@
         <module>Order-service</module>
         <module>Discovery-Server</module>
         <module>ApiGateway</module>
+        <module>Notification-Service</module>
     </modules>
 
     <properties>

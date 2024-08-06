@@ -1,5 +1,6 @@
 package com.darkthor.Service;
 
+import com.darkthor.Event.OrderPlacedEvent;
 import com.darkthor.Model.Order;
 import com.darkthor.Model.OrderLineItem;
 import com.darkthor.Repository.OrderRepository;
@@ -8,6 +9,8 @@ import com.darkthor.Response.InventoryResponse;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.kafka.annotation.KafkaListener;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -24,6 +27,7 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final Mapper mapper;
     private final WebClient.Builder webClientBuilder;
+    private final KafkaTemplate<String,OrderPlacedEvent> kafkaTemplate;
     private final Logger logger= LoggerFactory.getLogger(OrderService.class);
 
     public void placeOrder(OrderRequest orderRequest) {
@@ -62,6 +66,7 @@ public class OrderService {
 
             if (allInStock) {
                 orderRepository.save(order);
+                kafkaTemplate.send("notificationTopic",new OrderPlacedEvent(order.getOrderNumber()));
             } else {
                 throw new RuntimeException("Not enough stock to place order");
             }
